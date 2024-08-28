@@ -1,3 +1,4 @@
+let scoreboard = [];
 function numberGame(){
 alert("Let's Guess the Number game")
 
@@ -13,12 +14,17 @@ while (true){
 
   let userAttempt = prompt('Enter your gess.')
   if(userAttempt == computerNumber){
-  alert("Well done!👀")
+  alert("Well done!👀You've guessed the right number!")
   break;
   }else{
     alert("Nope!!😶")
   }
 }
   result()
+}
+scoreboard.push({ name: name, score: count });
+function displayScoreboard() {
+  let scores = scoreboard
+  alert ('name + score')
 }
 
