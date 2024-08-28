@@ -7,8 +7,20 @@ let answer = prompt ('Hi,' + name + "I'm thinking of a number between 1 and 20 i
 let userAttempt = prompt("What is your guess?")
 let computerNumber = Math.floor(Math.random()*(20 - 1) + 1)
 
+let count = 0
+while (true){
+  count = count + 1
 
-"Nope!!😶"
-"Well done!👀"
+  let userAttempt = prompt('Enter your gess.')
+  if(userAttempt == computerNumber){
+  alert("Well done!👀")
+  break;
+  }else{
+    alert("Nope!!😶")
+  }
+}
+  result()
+}
 
+function result()
 }
