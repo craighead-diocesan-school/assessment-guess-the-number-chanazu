@@ -22,5 +22,3 @@ while (true){
   result()
 }
 
-function result()
-}
