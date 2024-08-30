@@ -1,11 +1,14 @@
-let scoreboard = [];
+let answer
+let scoreboard = []
+let username
+let count = 0
 function numberGame(){
 alert("Let's Guess the Number game")
 
-let name = prompt('What is your name?')
-let answer = prompt ('Hi,' + name + "I'm thinking of a number between 1 and 20 inclusive.")
+let username = prompt('What is your name?')
+let answer = prompt ('Hi,' + username + "I'm thinking of a number between 1 and 20 inclusive.")
 
-let userAttempt = prompt("What is your guess?")
+let userAttempt= prompt("What is your guess?")
 let computerNumber = Math.floor(Math.random()*(20 - 1) + 1)
 
 let count = 0
@@ -22,9 +25,11 @@ while (true){
 }
   result()
 }
-scoreboard.push({ name: name, score: count });
-function displayScoreboard() {
-  let scores = scoreboard
-  alert ('name + score')
-}
+function showScore(){
 
+  let userAttempt = ''
+  for(let score of scoreboard){
+    userAttempt += score.username + ':' + score.count + ', '
+  }
+ alert (userScore)
+  }
